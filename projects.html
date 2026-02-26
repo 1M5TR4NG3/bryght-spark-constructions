@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work We've Done | Bryght Spark Constructions</title>
+  <meta name="description" content="Portfolio of completed solar energy, construction, and office building projects by Bryght Spark Constructions across South Africa."/>
+  
+  <!-- Basic Reset & Fonts (via Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #1a2b4c;      /* Dark navy */
+      --accent: #f39c12;       /* Orange/yellow */
+      --light: #f8f9fa;
+      --dark: #333;
+      --grey: #6c757d;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 5%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 5% 6rem;
+    }
+    
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+      font-size: 1.2rem;
+      color: var(--grey);
+    }
+    
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .project-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    
+    .project-content {
+      padding: 1.5rem;
+    }
+    
+    .project-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    
+    .project-desc {
+      font-size: 1rem;
+      color: var(--grey);
+      margin-bottom: 1rem;
+    }
+    
+    .project-meta {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+    
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+    
+    .cta:hover {
+      background: #d98200;
+    }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      .nav-links { gap: 1rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Bryght Spark Constructions</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Work We've Done</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a> <!-- or link to contact.html if separate -->
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Work We've Done</h1>
+    <p class="intro">Explore some of our standout projects across South Africa. From large-scale solar installations and sustainable construction to modern office developments, we deliver quality, on-time, and on-budget.</p>
+
+    <div class="portfolio-grid">
+      
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1613665798973-6578180a7965?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sandton Corporate Office Park" class="project-img">
+        <div class="project-content">
+          <h3 class="project-title">Sandton Corporate Office Park</h3>
+          <p class="project-desc">Full construction of a multi-storey office complex with integrated 300kW rooftop solar PV system for net energy savings.</p>
+          <div class="project-meta">Johannesburg • 2024 • Office Building + Solar</div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58caa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Industrial Warehouse Solar" class="project-img">
+        <div class="project-content">
+          <h3 class="project-title">Gauteng Industrial Warehouse</h3>
+          <p class="project-desc">5,000m² steel-frame warehouse build featuring solar-powered lighting, backup systems, and energy-efficient design.</p>
+          <div class="project-meta">Gauteng • 2023 • Construction + Solar</div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92c91f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pretoria Office Fit-Out" class="project-img">
+        <div class="project-content">
+          <h3 class="project-title">Pretoria Commercial Complex</h3>
+          <p class="project-desc">Modern office fit-out and 150kW solar installation delivering major reductions in operational energy costs.</p>
+          <div class="project-meta">Pretoria • 2025 • Office Building</div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1509395596868-d7976f8b07b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cape Town Solar Farm" class="project-img">
+        <div class="project-content">
+          <h3 class="project-title">Cape Town Community Solar Array</h3>
+          <p class="project-desc">200kW ground-mounted solar farm providing clean power to local residential and small business users.</p>
+          <div class="project-meta">Cape Town • 2024 • Solar Energy</div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1541888946425-47bb2955c000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Durban Retail Extension" class="project-img">
+        <div class="project-content">
+          <h3 class="project-title">Durban Retail Centre Extension</h3>
+          <p class="project-desc">Structural expansion and eco-friendly upgrades to an existing commercial retail space.</p>
+          <div class="project-meta">Durban • 2022 • Construction</div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hybrid Solar Retrofit" class="project-img">
+        <div class="project-content">
+          <h3 class="project-title">Factory Hybrid Solar Retrofit</h3>
+          <p class="project-desc">Conversion of existing industrial facility to hybrid solar power with battery storage for uninterrupted operations.</p>
+          <div class="project-meta">Mpumalanga • 2023 • Solar Energy</div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92c91f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Eco Office Block" class="project-img">
+        <div class="project-content">
+          <h3 class="project-title">Johannesburg Net-Zero Office Block</h3>
+          <p class="project-desc">New multi-storey commercial building designed for net-zero energy with full solar integration.</p>
+          <div class="project-meta">Johannesburg • 2024 • Sustainable Construction + Solar</div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Limpopo Solar Plant" class="project-img">
+        <div class="project-content">
+          <h3 class="project-title">Limpopo Utility-Scale Solar</h3>
+          <p class="project-desc">66MW solar PV plant contributing to regional renewable energy goals.</p>
+          <div class="project-meta">Limpopo • 2025 • Solar Energy</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:4rem;">
+      <a href="index.html#contact" class="cta">Ready to Start Your Project? Get a Free Quote</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bryght Spark Constructions. All rights reserved.</p>
+    <p>Hotline: +27 78 380 0651 | <a href="https://wa.me/27783800651" style="color:var(--accent);">WhatsApp Us</a></p>
+  </footer>
+
+</body>
+</html>
