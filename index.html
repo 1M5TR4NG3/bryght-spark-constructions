@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryght Spark Constructions | Solar & Construction Solutions South Africa</title>
+    <meta name="description" content="Leading South African construction company specializing in solar energy solutions, general construction, and commercial office development. Serving residential, commercial & industrial clients nationwide.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-pattern {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)), url('http://static.photos/construction/1920x1080/1');
+            background-size: cover;
+            background-position: center;
+        }
+        .spark-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+        }
+        .nav-scrolled {
+            background-color: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="zap" class="w-8 h-8 text-amber-500"></i>
+                    <div class="flex flex-col">
+                        <span class="text-white font-bold text-xl tracking-tight">BRYGHT SPARK</span>
+                        <span class="text-slate-400 text-xs uppercase tracking-widest">Constructions</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-amber-500 font-medium">Home</a>
+                    <a href="about.html" class="text-slate-300 hover:text-white transition-colors font-medium">About</a>
+                    <a href="services.html" class="text-slate-300 hover:text-white transition-colors font-medium">Services</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-white transition-colors font-medium">Projects</a>
+                    <a href="contact.html" class="bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105">
+                        Get Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 text-amber-500 font-medium bg-slate-800 rounded-lg">Home</a>
+                <a href="about.html" class="block px-3 py-3 text-slate-300 hover:text-white font-medium rounded-lg hover:bg-slate-800">About</a>
+                <a href="services.html" class="block px-3 py-3 text-slate-300 hover:text-white font-medium rounded-lg hover:bg-slate-800">Services</a>
+                <a href="projects.html" class="block px-3 py-3 text-slate-300 hover:text-white font-medium rounded-lg hover:bg-slate-800">Projects</a>
+                <a href="contact.html" class="block px-3 py-3 bg-amber-500 text-slate-900 font-bold rounded-lg text-center mt-4">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/30 rounded-full px-4 py-1.5 mb-6">
+                    <span class="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
+                    <span class="text-amber-400 text-sm font-semibold uppercase tracking-wider">Since 2008 • Nationwide Coverage</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Building South Africa's <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Future</span>
+                </h1>
+                <p class="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
+                    Premium solar energy solutions, commercial construction, and office development. Delivering excellence across Johannesburg, Cape Town, Durban, and beyond.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-slate-900 text-lg font-bold px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-amber-500/30">
+                        <span>Start Your Project</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="projects.html" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 text-lg font-semibold px-8 py-4 rounded-full transition-all backdrop-blur-sm">
+                        <span>View Our Work</span>
+                        <i data-lucide="building-2" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/10">
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-white">15+</div>
+                        <div class="text-slate-400 text-sm mt-1">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-white">500+</div>
+                        <div class="text-slate-400 text-sm mt-1">Projects Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-white">50MW+</div>
+                        <div class="text-slate-400 text-sm mt-1">Solar Installed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-semibold uppercase tracking-wider text-sm">What We Do</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-4">Comprehensive Construction Solutions</h2>
+                <p class="text-slate-600 text-lg">From renewable energy to commercial developments, we deliver turnkey solutions that power South Africa's growth.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Solar -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover:bg-slate-900 transition-all duration-300 overflow-hidden border border-slate-200 hover:border-slate-800">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all"></div>
+                    <div class="relative">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors">
+                            <i data-lucide="sun" class="w-7 h-7 text-amber-600 group-hover:text-slate-900 transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-white">Solar Energy Solutions</h3>
+                        <p class="text-slate-600 mb-6 group-hover:text-slate-300">Residential, commercial, and industrial solar installations. Grid-tied, off-grid, and hybrid systems with premium equipment.</p>
+                        <a href="services.html#solar" class="inline-flex items-center gap-2 text-amber-600 font-semibold group-hover:text-amber-400">
+                            Learn more <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- General Construction -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover:bg-slate-900 transition-all duration-300 overflow-hidden border border-slate-200 hover:border-slate-800">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all"></div>
+                    <div class="relative">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors">
+                            <i data-lucide="hard-hat" class="w-7 h-7 text-amber-600 group-hover:text-slate-900 transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-white">General Construction</h3>
+                        <p class="text-slate-600 mb-6 group-hover:text-slate-300">Civil works, residential estates, renovations, and structural engineering. Quality craftsmanship that stands the test of time.</p>
+                        <a href="services.html#construction" class="inline-flex items-center gap-2 text-amber-600 font-semibold group-hover:text-amber-400">
+                            Learn more <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Office Development -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover:bg-slate-900 transition-all duration-300 overflow-hidden border border-slate-200 hover:border-slate-800">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all"></div>
+                    <div class="relative">
+                        <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors">
+                            <i data-lucide="building-2" class="w-7 h-7 text-amber-600 group-hover:text-slate-900 transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-white">Office & Commercial</h3>
+                        <p class="text-slate-600 mb-6 group-hover:text-slate-300">Modern office parks, retail centers, and industrial facilities. End-to-end development from concept to completion.</p>
+                        <a href="services.html#commercial" class="inline-flex items-center gap-2 text-amber-600 font-semibold group-hover:text-amber-400">
+                            Learn more <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-amber-500 font-semibold uppercase tracking-wider text-sm">Why Bryght Spark</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">Built on Reliability, Powered by Innovation</h2>
+                    <p class="text-slate-300 text-lg mb-8">We combine traditional construction excellence with cutting-edge renewable energy technology to deliver projects that exceed expectations and reduce environmental impact.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">NHBRC Registered</h4>
+                                <p class="text-slate-400">Fully compliant with South African building regulations and industry standards.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="award" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">Quality Assurance</h4>
+                                <p class="text-slate-400">Rigorous project management and quality control on every build.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">Nationwide Presence</h4>
+                                <p class="text-slate-400">Active operations in all major provinces: Gauteng, Western Cape, KZN, and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-amber-500 to-orange-600 rounded-3xl opacity-20 blur-2xl"></div>
+                    <img src="http://static.photos/industry/800x600/42" alt="Construction site" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl max-w-xs">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex -space-x-2">
+                                <div class="w-10 h-10 rounded-full bg-slate-300 border-2 border-white flex items-center justify-center text-xs font-bold text-slate-700">JD</div>
+                                <div class="w-10 h-10 rounded-full bg-slate-400 border-2 border-white flex items-center justify-center text-xs font-bold text-slate-700">SM</div>
+                                <div class="w-10 h-10 rounded-full bg-amber-500 border-2 border-white flex items-center justify-center text-xs font-bold text-white">+5</div>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-900">Expert Team</div>
+                        </div>
+                        <p class="text-slate-600 text-sm">"The Bryght Spark team delivered our 2MW solar farm ahead of schedule."</p>
+                        <div class="mt-3 text-xs text-slate-500">— Cape Town Industrial Client</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <div class="max-w-2xl">
+                    <span class="text-amber-600 font-semibold uppercase tracking-wider text-sm">Portfolio</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-3">Featured Projects</h2>
+                </div>
+                <a href="projects.html" class="inline-flex items-center gap-2 text-slate-900 font-semibold hover:text-amber-600 transition-colors">
+                    View all projects <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl mb-4">
+                        <img src="http://static.photos/solar/600x400/10" alt="Solar Farm" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                            <span class="inline-block bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full mb-2">Solar Energy</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">East London Industrial Solar</h3>
+                    <p class="text-slate-600 text-sm">5MW ground-mounted solar installation for manufacturing facility</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl mb-4">
+                        <img src="http://static.photos/office/600x400/15" alt="Office Building" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                            <span class="inline-block bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full mb-2">Commercial</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">Sandton Office Park Phase II</h3>
+                    <p class="text-slate-600 text-sm">12-story AAA-grade office development with LEED certification</p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl mb-4">
+                        <img src="http://static.photos/estate/600x400/20" alt="Residential Estate" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                            <span class="inline-block bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full mb-2">Residential</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">Midrand Eco Estate</h3>
+                    <p class="text-slate-600 text-sm">200-unit residential development with integrated solar and smart home tech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-semibold uppercase tracking-wider text-sm">Testimonials</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-3">Trusted by Industry Leaders</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6">"Bryght Spark transformed our warehouse operations with a 500kW solar system. Professional team, exceptional quality, and significant cost savings from day one."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center font-bold text-slate-600">MN</div>
+                        <div>
+                            <div class="font-bold text-slate-900">Mark Ndlovu</div>
+                            <div class="text-slate-500 text-sm">Operations Director, Durban Logistics Hub</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6">"The attention to detail on our Pretoria office complex was remarkable. They delivered on time despite challenging weather conditions. Highly recommend for commercial builds."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center font-bold text-slate-600">SP</div>
+                        <div>
+                            <div class="font-bold text-slate-900">Sarah Pretorius</div>
+                            <div class="text-slate-500 text-sm">CEO, Apex Properties</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6">"From foundation to final finish, their team handled our retail center expansion with expertise. The solar integration was seamless and our tenants love the green credentials."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center font-bold text-slate-600">JK</div>
+                        <div>
+                            <div class="font-bold text-slate-900">Jacob Kriel</div>
+                            <div class="text-slate-500 text-sm">Development Manager, Bloemfontein Mall</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-[url('http://static.photos/pattern/1920x1080/5')] bg-cover bg-center"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Build Something Amazing?</h2>
+            <p class="text-xl text-slate-300 mb-10">Let's discuss your project. No obligation, just expert advice and a detailed quote.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-slate-900 text-lg font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-amber-500/30">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <span>Get Free Quote</span>
+                </a>
+                <a href="tel:+27101234567" class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white/30 hover:border-white text-white text-lg font-semibold px-10 py-4 rounded-full transition-all">
+                    <i data-lucide="phone-call" class="w-5 h-5"></i>
+                    <span>+27 10 123 4567</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-300 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i data-lucide="zap" class="w-8 h-8 text-amber-500"></i>
+                        <span class="text-white font-bold text-xl">BRYGHT SPARK</span>
+                    </div>
+                    <p class="text-slate-400 mb-6">Building South Africa's future through excellence in construction and renewable energy solutions.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html#solar" class="hover:text-amber-500 transition-colors">Solar Energy</a></li>
+                        <li><a href="services.html#construction" class="hover:text-amber-500 transition-colors">General Construction</a></li>
+                        <li><a href="services.html#commercial" class="hover:text-amber-500 transition-colors">Commercial Development</a></li>
+                        <li><a href="services.html" class="hover:text-amber-500 transition-colors">Project Management</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="hover:text-amber-500 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-amber-500 transition-colors">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-500 transition-colors">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-amber-500 mt-0.5"></i>
+                            <span>123 Main Road, Sandton<br>Johannesburg, 2196</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-amber-500"></i>
+                            <span>+27 10 123 4567</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-amber-500"></i>
+                            <span>info@bryghtspark.co.za</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-sm">&copy; 2024 Bryght Spark Constructions. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-slate-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
+<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
+</body>
+</html>
